@@ -13,3 +13,4 @@ debug.ts
 .DS_Store
 .env
 coverage/
+CLAUDE.md
