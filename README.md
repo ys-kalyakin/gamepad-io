@@ -56,7 +56,10 @@ gamepad.start();
 ```
 
 ### Currently Supported Gamepads
+
 - **8BitDo Pro 2** (`gamepadConfigs.eightBitDoPro2`) - Vendor ID: 0x2dc8, Product ID: 0x6006
+- **Logitech F310** (`gamepadConfigs.logitechF310`) - Vendor ID: 0x046d, Product ID: 0xc216
+- **Logitech F710** (`gamepadConfigs.logitechF710`) - Vendor ID: 0x046d, Product ID: 0xc219
 
 To add support for other gamepads, create a custom JSON configuration file following the existing structure and use it with the `Gamepad` constructor.
 

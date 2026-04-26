@@ -1,5 +1,7 @@
 import { IConfig, GamepadButton } from '../IConfig';
 import eightBitDoPro2Config from './8bitdopro2.json';
+import logitechF310Config from './logitechf310.json';
+import logitechF710Config from './logitechf710.json';
 
 /**
  * Convert raw JSON configuration to typed IConfig.
@@ -28,6 +30,8 @@ function convertConfig(config: any): IConfig {
  */
 export const gamepadConfigs: {
     eightBitDoPro2: IConfig;
+    logitechF310: IConfig;
+    logitechF710: IConfig;
 } = {
     /**
      * Configuration for 8BitDo Pro 2 controller.
@@ -36,6 +40,20 @@ export const gamepadConfigs: {
      * Product ID: 0x6006 (24582)
      */
     eightBitDoPro2: convertConfig(eightBitDoPro2Config),
+    /**
+     * Configuration for Logitech F310 controller.
+     *
+     * Vendor ID: 0x046d (1133)
+     * Product ID: 0xc216 (49686)
+     */
+    logitechF310: convertConfig(logitechF310Config),
+    /**
+     * Configuration for Logitech F710 controller.
+     *
+     * Vendor ID: 0x046d (1133)
+     * Product ID: 0xc219 (49689)
+     */
+    logitechF710: convertConfig(logitechF710Config),
 };
 
 export type GamepadConfigName = keyof typeof gamepadConfigs;
