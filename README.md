@@ -36,6 +36,30 @@ gamepad.on(GamepadEvent.UP, (buttonName) => {
 gamepad.start();
 ```
 
+## Built-in Configurations
+
+The library provides predefined gamepad configurations for supported controllers. These configurations are available via the `gamepadConfigs` export.
+
+```typescript
+import { Gamepad, GamepadEvent } from 'gamepad-io';
+import { gamepadConfigs } from 'gamepad-io';
+
+// Use the 8BitDo Pro 2 configuration
+const gamepad = new Gamepad(gamepadConfigs.eightBitDoPro2);
+
+// Listen for button events
+gamepad.on(GamepadEvent.DOWN, (buttonName) => {
+    console.log(`Button ${buttonName} pressed`);
+});
+
+gamepad.start();
+```
+
+### Currently Supported Gamepads
+- **8BitDo Pro 2** (`gamepadConfigs.eightBitDoPro2`) - Vendor ID: 0x2dc8, Product ID: 0x6006
+
+To add support for other gamepads, create a custom JSON configuration file following the existing structure and use it with the `Gamepad` constructor.
+
 ## Usage Examples
 
 ### Tracking Button States
