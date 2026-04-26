@@ -29,3 +29,7 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# Documentation and configuration (not for production)
+docs/
+CLAUDE.md
