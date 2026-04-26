@@ -1,0 +1,15 @@
+src/
+tests/
+docs/
+node_modules/
+*.ts
+!*.d.ts
+tsconfig.json
+jest.config.js
+.eslintrc.js
+.prettierrc
+debug.ts
+*.log
+.DS_Store
+.env
+coverage/

@@ -1,0 +1,48 @@
+{
+    "name": "gamepad-io",
+    "version": "0.1.0",
+    "description": "Node.js library for gamepad support using node-hid",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "test": "jest",
+        "debug": "ts-node debug.ts",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "gamepad",
+        "hid",
+        "controller",
+        "input"
+    ],
+    "author": "ys.kalyakin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ys-kalyakin/gamepad-io"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "mathjs": "^15.0.0",
+        "node-hid": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.0",
+        "@types/node": "^20.0.0",
+        "@types/node-hid": "^1.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.59.0",
+        "@typescript-eslint/parser": "^8.59.0",
+        "eslint": "^8.0.0",
+        "jest": "^29.5.0",
+        "prettier": "^3.0.0",
+        "ts-jest": "^29.1.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.0.0"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
