@@ -1,8 +1,7 @@
 import { Gamepad, GamepadEvent } from './src/Gamepad';
 import { IConfig, GamepadButton } from './src/IConfig';
 import type { StickValue } from './src/StickValue'; // Add this import
-import * as fs from 'fs';
-import * as path from 'path';
+import { gamepadConfigs } from './src/gamepads';
 
 // Simple logger
 const logger = {
@@ -12,8 +11,7 @@ const logger = {
 };
 
 // Load gamepad config
-const configPath = path.join(__dirname, 'src/gamepads/8bitdopro2.json');
-const config: IConfig = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+const config: IConfig = gamepadConfigs.eightBitDoPro2;
 
 console.log('=== Gamepad Debug Mode ===');
 console.log('Config:', JSON.stringify(config, null, 2));

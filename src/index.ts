@@ -4,6 +4,7 @@ import { IConfig } from './IConfig';
 import { GamepadButton } from './IConfig';
 import { Combination } from './ICombination';
 import { StickValue } from './StickValue';
+import { gamepadConfigs, GamepadConfigName } from './gamepads';
 
 export { Gamepad };
 export { GamepadEvent };
@@ -12,3 +13,4 @@ export { IConfig };
 export { GamepadButton };
 export { Combination };
 export { StickValue };
+export { gamepadConfigs, GamepadConfigName };
