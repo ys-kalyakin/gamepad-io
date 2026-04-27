@@ -1,6 +1,6 @@
 {
     "name": "gamepad-io",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Node.js library for gamepad support using node-hid",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
