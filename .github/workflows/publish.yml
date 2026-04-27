@@ -9,6 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         permissions:
             id-token: write
+            contents: write
         steps:
             - name: Checkout
               uses: actions/checkout@v4
@@ -49,8 +50,8 @@ jobs:
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
             - name: Create GitHub Release
-              uses: softprops/action-gh-release@v1
+              uses: softprops/action-gh-release@v2
               with:
-                  generate_changelog: true
+                  generate_release_notes: true
                   name: Release ${{ steps.version.outputs.VERSION }}
                   tag_name: ${{ github.ref_name }}
