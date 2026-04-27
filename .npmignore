@@ -14,3 +14,4 @@ debug.ts
 .env
 coverage/
 CLAUDE.md
+.vscode/
