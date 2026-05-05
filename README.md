@@ -63,6 +63,10 @@ gamepad.start();
 
 To add support for other gamepads, create a custom JSON configuration file following the existing structure and use it with the `Gamepad` constructor.
 
+### Gamepad Configuration Helper
+
+For easier gamepad configuration creation, use the standalone [gamepad‑io‑helper](https://github.com/ys‑kalyakin/gamepad‑io‑helper) tool. It provides a GUI for mapping buttons, axes, and combinations, and generates JSON configurations compatible with gamepad‑io.
+
 ## Usage Examples
 
 ### Tracking Button States
